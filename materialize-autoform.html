@@ -1,0 +1,17 @@
+<head>
+    <title>materialize-autoform</title>
+</head>
+
+<body>
+    <h5 class="center">Materialize AutoForm</h5>
+
+    <div class="row">
+        <div class="col s4 offset-s4">
+            {{> hello}}
+        </div>
+    </div>
+</body>
+
+<template name="hello">
+    {{> quickForm id="tableCreate" schema="Schema.test" fields="size,field1,field2"}}
+</template>
