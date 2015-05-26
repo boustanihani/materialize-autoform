@@ -6,10 +6,20 @@ Schema = {};
 
 Schema.test = new SimpleSchema({
 
-    size: {
+    size1: {
         type: Number,
-        label: 'Size',
+        label: 'Size-1',
         allowedValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    },
+
+    size2: {
+        type: Number,
+        label: 'Size-2',
+        allowedValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        autoform: {
+            firstOption: 'Choose Size-2',
+            options: 'allowed',
+        }
     },
 
     field1: {
@@ -21,5 +31,4 @@ Schema.test = new SimpleSchema({
         type: String,
         label: 'Field-2',
     },
-
 });
