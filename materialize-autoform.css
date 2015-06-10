@@ -1,1 +1,4 @@
-/* CSS declarations go here */
+.dropdown-content {
+    z-index: 900;
+}
+/*https://github.com/Dogfalo/materialize/issues/1181*/
